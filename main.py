@@ -6,7 +6,7 @@ from app.db.database import Base, engine
 app = FastAPI()
 
 # create tables automatically
-Base.metadata.create_all(bind=engine)
+# Base.metadata.create_all(bind=engine)
 
 # ✅ CORS (important for frontend)
 app.add_middleware(
